@@ -22,7 +22,7 @@ export default function Blog() {
     return (
       <div className="max-w-6xl mx-auto px-6 py-20 mt-12 text-center text-text-secondary font-mono">
         <Terminal className="mx-auto mb-4 opacity-50" size={48} />
-        <p>No writeups found. Awaiting data injection into /app/blog...</p>
+        <p>No writeups found. Awaiting data injection into /content/blog...</p>
       </div>
     );
   }
