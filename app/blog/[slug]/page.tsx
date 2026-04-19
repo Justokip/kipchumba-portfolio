@@ -5,9 +5,9 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { ArrowLeft, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-  const filePath = path.join(process.cwd(), 'content/blog', `${slug}.md`);
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> | { slug: string } }) {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), 'app/blog', `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContent);
 
@@ -46,8 +46,10 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   );
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  const blogDir = path.join(process.cwd(), 'content/blog');
+  const blogDir = path.join(process.cwd(), 'app/blog');
   if (!fs.existsSync(blogDir)) return [];
   
   const files = fs.readdirSync(blogDir);
