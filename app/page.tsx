@@ -1,65 +1,79 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "framer-motion";
+import { Shield, Server, Lock, ArrowRight, Mail } from "lucide-react"; 
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="max-w-6xl mx-auto px-6 py-20">
+      
+      <section className="flex flex-col md:flex-row items-center justify-between gap-12 mt-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex-1 space-y-6"
+        >
+          <div className="inline-block px-3 py-1 bg-surface border border-neon-green/30 text-neon-green text-xs font-mono rounded-full">
+            System Active // Available for Work
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            Securing networks. <br />
+            <span className="text-neon-blue">
+              Building infrastructure.
+            </span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg text-text-secondary max-w-xl">
+            I am Justus Kipchumba, a Cybersecurity Analyst & IT Specialist based in Nairobi. I 
+            specialize in penetration testing, network administration, and secure system architecture. 
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          
+          <div className="flex flex-wrap gap-4 pt-4">
+            <Link href="/projects" className="px-6 py-3 bg-neon-green text-background font-bold rounded flex items-center gap-2 hover:opacity-90 transition-all">
+              View My Work <ArrowRight size={18} />
+            </Link>
+            <Link href="/cv.pdf" target="_blank" className="px-6 py-3 border border-text-secondary hover:border-neon-green text-text-primary font-bold rounded transition-all">
+              Download CV
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-6 pt-6 text-text-secondary">
+            <Link href="https://github.com/Justokip" target="_blank" rel="noopener noreferrer" className="hover:text-neon-green transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3-.3 6-1.5 6-6.5a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.6a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 5 3 6.2 6 6.5a4.8 4.8 0 0 0-1 3.2v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </Link> 
+            <Link href="https://www.linkedin.com/in/justus-kipchumba/" target="_blank" rel="noopener noreferrer" className="hover:text-neon-green transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </Link>
+            <Link href="/contact" className="hover:text-neon-green transition-colors">
+              <Mail size={24} />
+            </Link>
+          </div>
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex-1 hidden md:flex justify-center relative"
+        >
+          <div className="relative z-10 grid grid-cols-2 gap-4">
+             <div className="p-6 bg-surface border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-green transition-colors cursor-pointer">
+                <Shield size={40} className="text-neon-green" />
+                <span className="font-mono text-sm">Pen Testing</span>
+             </div>
+             <div className="p-6 bg-surface border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-blue transition-colors mt-8 cursor-pointer">
+                <Server size={40} className="text-neon-blue" />
+                <span className="font-mono text-sm">Infrastructure</span>
+             </div>
+             <div className="p-6 bg-surface border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-green transition-colors col-span-2 cursor-pointer">
+                <Lock size={40} className="text-neon-green" />
+                <span className="font-mono text-sm">System Admin</span>
+             </div>
+          </div>
+        </motion.div>
+      </section>
+
     </div>
   );
 }
