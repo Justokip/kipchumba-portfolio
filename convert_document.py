@@ -160,14 +160,14 @@ def convert_single_document(docx_path, output_filename, media_folder_name):
         # For both /home/... and relative path references
         md_content = re.sub(
             r'!\[\]\(/home/crypt0/Desktop/kipchumba-portfolio/public/media-original/[^/]+/(?:media/)?([^/]+\.png)\)',
-            rf'![](/media-original/{media_folder_name}/\1)',
+            rf'![](/kipchumba-portfolio/media-original/{media_folder_name}/\1)',
             md_content
         )
         
         # Also handle relative references (media/image.png)
         md_content = re.sub(
             r'!\[\]\(media/([^)]+\.png)\)',
-            rf'![](/media-original/{media_folder_name}/\1)',
+            rf'![](/kipchumba-portfolio/media-original/{media_folder_name}/\1)',
             md_content
         )
         
@@ -180,7 +180,7 @@ def convert_single_document(docx_path, output_filename, media_folder_name):
                 # Add images section at the end
                 md_content += "\n\n## Extracted Images\n\n"
                 for img in extracted_images:
-                    md_content += f"![](/media-original/{media_folder_name}/{img})\n\n"
+                    md_content += f"![](/kipchumba-portfolio/media-original/{media_folder_name}/{img})\n\n"
         
         # Save temporarily to check paths work
         with open(temp_md_path, 'w', encoding='utf-8') as f:

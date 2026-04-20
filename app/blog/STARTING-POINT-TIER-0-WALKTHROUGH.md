@@ -10,7 +10,7 @@ platform: "HackTheBox"
 
 **Command: sudo openvpn \<file.ovpn\>**
 
-![](/media-original/tier0/image14.png)
+![](/kipchumba-portfolio/media-original/tier0/image14.png)
 
 **1.2 MEOW**
 
@@ -54,7 +54,7 @@ platform: "HackTheBox"
 
 > **Answer: Telnet**
 
-![](/media-original/tier0/image17.png)
+![](/kipchumba-portfolio/media-original/tier0/image17.png)
 
 **Task 7**
 
@@ -63,13 +63,13 @@ platform: "HackTheBox"
 
 **Answer: root**
 
-![](/media-original/tier0/image16.png)
+![](/kipchumba-portfolio/media-original/tier0/image16.png)
 
 2.  Submit root flag
 
 **Answer: b40abdfe23665f766f9c61ecba8a4c19**
 
-![](/media-original/tier0/image2.png)
+![](/kipchumba-portfolio/media-original/tier0/image2.png)
 
 **1.3 FAWN**
 
@@ -106,7 +106,7 @@ From your scans, what version is FTP running on the target?
 
 > **Answer: vsftpd 3.0.3**
 
-![](/media-original/tier0/image8.png)
+![](/kipchumba-portfolio/media-original/tier0/image8.png)
 
 **Task 6**
 
@@ -114,7 +114,7 @@ From your scans, what OS type is running on the target?
 
 > **Answer: Unix**
 
-![](/media-original/tier0/image19.png)
+![](/kipchumba-portfolio/media-original/tier0/image19.png)
 
 **Task 7**
 
@@ -123,7 +123,7 @@ client help menu?
 
 > **Answer: Ftp -?**
 
-![](/media-original/tier0/image5.png)
+![](/kipchumba-portfolio/media-original/tier0/image5.png)
 
 **Task 8**
 
@@ -158,7 +158,7 @@ Submit root flag
 
 > **Answer: 035db21c881520061c53e0536e44f815**
 
-![](/media-original/tier0/image4.png)
+![](/kipchumba-portfolio/media-original/tier0/image4.png)
 
 **1.4 DANCING**
 
@@ -180,7 +180,7 @@ What is the service name for port 445 that came up in our Nmap scan?
 
 **Answer: microsoft-ds**
 
-![](/media-original/tier0/image10.png)
+![](/kipchumba-portfolio/media-original/tier0/image10.png)
 
 **Task 4**
 
@@ -189,7 +189,7 @@ utility to \'list\' the available shares on Dancing?
 
 **Answer: -L**
 
-![](/media-original/tier0/image12.png)
+![](/kipchumba-portfolio/media-original/tier0/image12.png)
 
 **Task 5**
 
@@ -197,7 +197,7 @@ How many shares are there on Dancing?
 
 **Answer: 4**
 
-![](/media-original/tier0/image3.png)
+![](/kipchumba-portfolio/media-original/tier0/image3.png)
 
 **Task 6**
 
@@ -206,7 +206,7 @@ blank password?
 
 **Answer: WorkShares**
 
-![](/media-original/tier0/image1.png)
+![](/kipchumba-portfolio/media-original/tier0/image1.png)
 
 **Task 7**
 
@@ -221,11 +221,11 @@ Submit root flag
 
 Accessing the passwordless share to get the flag:
 
-![](/media-original/tier0/image6.png)
+![](/kipchumba-portfolio/media-original/tier0/image6.png)
 
 **Screenshot completion:**
 
-![](/media-original/tier0/image21.png)
+![](/kipchumba-portfolio/media-original/tier0/image21.png)
 
 **1.5 REDEEMER**
 
@@ -235,7 +235,7 @@ Which TCP port is open on the machine?
 
 **Answer: 6379**
 
-![](/media-original/tier0/image11.png)
+![](/kipchumba-portfolio/media-original/tier0/image11.png)
 
 **Task 2**
 
@@ -243,7 +243,7 @@ Which service is running on the port that is open on the machine?
 
 **Answer: redis**
 
-![](/media-original/tier0/image7.png)
+![](/kipchumba-portfolio/media-original/tier0/image7.png)
 
 **Task 3**
 
@@ -281,7 +281,7 @@ machine?
 
 **Answer: 5.0.7**
 
-![](/media-original/tier0/image13.png)
+![](/kipchumba-portfolio/media-original/tier0/image13.png)
 
 **Task 8**
 
@@ -295,7 +295,7 @@ How many keys are present inside the database with index 0?
 
 **Answer: 4**
 
-![](/media-original/tier0/image9.png)
+![](/kipchumba-portfolio/media-original/tier0/image9.png)
 
 **Task 10**
 
@@ -303,17 +303,17 @@ Which command is used to obtain all the keys in a database?
 
 **Answer: Keys \***
 
-![](/media-original/tier0/image9.png)
+![](/kipchumba-portfolio/media-original/tier0/image9.png)
 
 Submit root flag
 
 **Answer:**
 
-![](/media-original/tier0/image18.png)
+![](/kipchumba-portfolio/media-original/tier0/image18.png)
 
 **Completion screenshot of Redeemer:**
 
-![](/media-original/tier0/image20.png)
+![](/kipchumba-portfolio/media-original/tier0/image20.png)
 
 **1.6 CONCLUSIONS**
 

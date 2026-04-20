@@ -23,7 +23,7 @@ container with an exposed Docker Engine API.
 
 Did an aggressive nmap scan.
 
-![](/media-original/sweettooth/image3.png)
+![](/kipchumba-portfolio/media-original/sweettooth/image3.png)
 
 **1.3 DATABASE EXPLORATION AND USER FLAG**
 
@@ -33,32 +33,32 @@ Did an aggressive nmap scan.
 
 > **Answer: o5yY6yya**
 >
-> ![](/media-original/sweettooth/image6.png)
+> ![](/kipchumba-portfolio/media-original/sweettooth/image6.png)
 
 2.  What was the temperature of the water tank at 1621346400 (UTC Unix
     Timestamp)?
 
 > **Answer: 22.5**
 >
-> ![](/media-original/sweettooth/image2.png)
+> ![](/kipchumba-portfolio/media-original/sweettooth/image2.png)
 
 3.  What is the highest rpm the motor of the mixer reached?
 
 > **Answer:4875**
 >
-> ![](/media-original/sweettooth/image1.png)
+> ![](/kipchumba-portfolio/media-original/sweettooth/image1.png)
 
 4.  What username do you find in one of the databases?
 
 > **Answer: uzJk6Ry98d8C**
 >
-> ![](/media-original/sweettooth/image9.png)
+> ![](/kipchumba-portfolio/media-original/sweettooth/image9.png)
 
 5.  user.txt
 
 > **Answer: THM**
 >
-> ![](/media-original/sweettooth/image4.png)
+> ![](/kipchumba-portfolio/media-original/sweettooth/image4.png)
 
 **1.4 PRIVILEGE ESCALATION**
 
@@ -70,19 +70,19 @@ Did an aggressive nmap scan.
 
 Creating an jwt token
 
-![](/media-original/sweettooth/image7.png)
+![](/kipchumba-portfolio/media-original/sweettooth/image7.png)
 
 Performing an ssh and checking the misconfigured permissions:
 
-![](/media-original/sweettooth/image12.png)
+![](/kipchumba-portfolio/media-original/sweettooth/image12.png)
 
 **Getting the shell:**
 
-![](/media-original/sweettooth/image10.png)
+![](/kipchumba-portfolio/media-original/sweettooth/image10.png)
 
 **Viewing the root contents**
 
-![](/media-original/sweettooth/image8.png)
+![](/kipchumba-portfolio/media-original/sweettooth/image8.png)
 
 **1.5 ESCAPE**
 
@@ -92,7 +92,7 @@ Performing an ssh and checking the misconfigured permissions:
 
 **[Answer: THM]**
 
-![](/media-original/sweettooth/image5.png)
+![](/kipchumba-portfolio/media-original/sweettooth/image5.png)
 
 **1.6 CONCLUSIONS**
 
@@ -108,4 +108,4 @@ focused enumeration and database analysis, I resolved these issues.
 
 **Completion Screenshot:**
 
-![](/media-original/sweettooth/image11.png)
+![](/kipchumba-portfolio/media-original/sweettooth/image11.png)

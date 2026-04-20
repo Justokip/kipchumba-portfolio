@@ -34,7 +34,7 @@ port 80 of the target?
 
 **Answer: Apache httpd 2.4.38 ((Debian))**
 
-![](/media-original/tier1/image13.png)
+![](/kipchumba-portfolio/media-original/tier1/image13.png)
 
 **Task 5**
 
@@ -77,17 +77,17 @@ What is the first word on the webpage returned?
 
 **Answer: Congratulations**
 
-![](/media-original/tier1/image35.png)
+![](/kipchumba-portfolio/media-original/tier1/image35.png)
 
 Submit root flag
 
 **Answer: e3d0796d002a446c0e622226f42e9672**
 
-![](/media-original/tier1/image35.png)
+![](/kipchumba-portfolio/media-original/tier1/image35.png)
 
 **Pawned💪**
 
-![](/media-original/tier1/image32.png)
+![](/kipchumba-portfolio/media-original/tier1/image32.png)
 
 **1.3 SEQUEL**
 
@@ -97,7 +97,7 @@ During our scan, which port do we find serving MySQL?
 
 **Answer: 3306**
 
-![](/media-original/tier1/image4.png)
+![](/kipchumba-portfolio/media-original/tier1/image4.png)
 
 **Task 2**
 
@@ -105,7 +105,7 @@ What community-developed MySQL version is the target running?
 
 **Answer: MariaDB**
 
-![](/media-original/tier1/image21.png)
+![](/kipchumba-portfolio/media-original/tier1/image21.png)
 
 **Task 3**
 
@@ -142,17 +142,17 @@ this host?
 
 **Answer: htb**
 
-![](/media-original/tier1/image1.png)
+![](/kipchumba-portfolio/media-original/tier1/image1.png)
 
 Submit root flag
 
 **Answer: 7b4bec00d1a39e3dd4e021ec3d915da8**
 
-![](/media-original/tier1/image28.png)
+![](/kipchumba-portfolio/media-original/tier1/image28.png)
 
 **Pawned🤓**
 
-![](/media-original/tier1/image33.png)
+![](/kipchumba-portfolio/media-original/tier1/image33.png)
 
 **1.4 CROCODILE**
 
@@ -169,7 +169,7 @@ What service version is found to be running on port 21?
 
 **Answer: vsftpd 3.0.3**
 
-![](/media-original/tier1/image22.png)
+![](/kipchumba-portfolio/media-original/tier1/image22.png)
 
 **Task 3**
 
@@ -178,7 +178,7 @@ message?
 
 **Answer: 230**
 
-![](/media-original/tier1/image22.png)
+![](/kipchumba-portfolio/media-original/tier1/image22.png)
 
 **Task 4**
 
@@ -201,7 +201,7 @@ What is one of the higher-privilege sounding usernames in
 
 **Answer: admin**
 
-![](/media-original/tier1/image19.png)
+![](/kipchumba-portfolio/media-original/tier1/image19.png)
 
 **Task 7**
 
@@ -209,7 +209,7 @@ What version of Apache HTTP Server is running on the target host?
 
 **Answer: Apache httpd 2.4.41**
 
-![](/media-original/tier1/image8.png)
+![](/kipchumba-portfolio/media-original/tier1/image8.png)
 
 **Task 8**
 
@@ -218,7 +218,7 @@ specific filetypes?
 
 **Answer: -x**
 
-![](/media-original/tier1/image18.png)
+![](/kipchumba-portfolio/media-original/tier1/image18.png)
 
 **Task 9**
 
@@ -227,7 +227,7 @@ provide the opportunity to authenticate to the web service?
 
 **Answer: login.php**
 
-![](/media-original/tier1/image7.png)
+![](/kipchumba-portfolio/media-original/tier1/image7.png)
 
 Submit root flag
 
@@ -235,15 +235,15 @@ Submit root flag
 
 **Authentication:**
 
-![](/media-original/tier1/image2.png)
+![](/kipchumba-portfolio/media-original/tier1/image2.png)
 
 **Root flag:**
 
-![](/media-original/tier1/image15.png)
+![](/kipchumba-portfolio/media-original/tier1/image15.png)
 
 **Pawned🥱**
 
-![](/media-original/tier1/image31.png)
+![](/kipchumba-portfolio/media-original/tier1/image31.png)
 
 **1.5 RESPONDER**
 
@@ -254,7 +254,7 @@ that we are being redirected to?
 
 **Answer: unika.htb**
 
-![](/media-original/tier1/image23.png)
+![](/kipchumba-portfolio/media-original/tier1/image23.png)
 
 **Task 2**
 
@@ -263,7 +263,7 @@ webpages?
 
 **Answer: php**
 
-![](/media-original/tier1/image16.png)
+![](/kipchumba-portfolio/media-original/tier1/image16.png)
 
 **Task 3**
 
@@ -272,7 +272,7 @@ language versions of the webpage?
 
 **Answer: Page**
 
-![](/media-original/tier1/image12.png)
+![](/kipchumba-portfolio/media-original/tier1/image12.png)
 
 **Task 4**
 
@@ -313,7 +313,7 @@ interface?
 
 **Answer: -I**
 
-![](/media-original/tier1/image10.png)
+![](/kipchumba-portfolio/media-original/tier1/image10.png)
 
 **Task 8**
 
@@ -326,7 +326,7 @@ what?.
 
 **Getting the hash: with reponder**
 
-![](/media-original/tier1/image29.png)
+![](/kipchumba-portfolio/media-original/tier1/image29.png)
 
 **Task 9**
 
@@ -334,7 +334,7 @@ What is the password for the administrator user?
 
 **Answer: badminton**
 
-![](/media-original/tier1/image14.png)
+![](/kipchumba-portfolio/media-original/tier1/image14.png)
 
 **Task 10**
 
@@ -344,21 +344,21 @@ TCP does it listen on?
 
 **Answer: 5985**
 
-![](/media-original/tier1/image17.png)
+![](/kipchumba-portfolio/media-original/tier1/image17.png)
 
 Submit root flag
 
 **Answer: ea81b7afddd03efaa0945333ed147fac**
 
-![](/media-original/tier1/image3.png)
+![](/kipchumba-portfolio/media-original/tier1/image3.png)
 
 **Flag:**
 
-![](/media-original/tier1/image5.png)
+![](/kipchumba-portfolio/media-original/tier1/image5.png)
 
 **Responder Pawned😎**
 
-![](/media-original/tier1/image30.png)
+![](/kipchumba-portfolio/media-original/tier1/image30.png)
 
 **1.6 THREE**
 
@@ -368,7 +368,7 @@ How many TCP ports are open?
 
 **Answer: 2**
 
-![](/media-original/tier1/image24.png)
+![](/kipchumba-portfolio/media-original/tier1/image24.png)
 
 **Task 2**
 
@@ -377,7 +377,7 @@ section of the website?
 
 **Answer: thetoppers.htb**
 
-![](/media-original/tier1/image26.png)
+![](/kipchumba-portfolio/media-original/tier1/image26.png)
 
 **Task 3**
 
@@ -393,7 +393,7 @@ Which service is running on the discovered sub-domain?
 
 **Answer: Amazon s3**
 
-![](/media-original/tier1/image11.png)
+![](/kipchumba-portfolio/media-original/tier1/image11.png)
 
 **Task 6**
 
@@ -402,7 +402,7 @@ running on the discovered sub-domain?
 
 **Answer: awscli**
 
-![](/media-original/tier1/image20.png)
+![](/kipchumba-portfolio/media-original/tier1/image20.png)
 
 **Task 7**
 
@@ -410,7 +410,7 @@ Which command is used to set up the AWS CLI installation?
 
 **Answer: aws configure**
 
-![](/media-original/tier1/image25.png)
+![](/kipchumba-portfolio/media-original/tier1/image25.png)
 
 **Task 8**
 
@@ -419,7 +419,7 @@ buckets?
 
 **Answer: aws s3 ls**
 
-![](/media-original/tier1/image27.png)
+![](/kipchumba-portfolio/media-original/tier1/image27.png)
 
 **Task 9**
 
@@ -428,7 +428,7 @@ language?
 
 **Answer: php**
 
-![](/media-original/tier1/image6.png)
+![](/kipchumba-portfolio/media-original/tier1/image6.png)
 
 Submit root flag
 
@@ -436,4 +436,4 @@ Submit root flag
 
 **Pawned**
 
-![](/media-original/tier1/image34.png)
+![](/kipchumba-portfolio/media-original/tier1/image34.png)

@@ -13,7 +13,7 @@ Which TCP port is hosting a database server?
 
 **Answer: 1433**
 
-![](/media-original/tier2/image1.png)
+![](/kipchumba-portfolio/media-original/tier2/image1.png)
 
 **Task 2**
 
@@ -21,7 +21,7 @@ What is the name of the non-Administrative share available over SMB?
 
 **Answer: backups**
 
-![](/media-original/tier2/image2.png)
+![](/kipchumba-portfolio/media-original/tier2/image2.png)
 
 **Task 3**
 
@@ -29,7 +29,7 @@ What is the password identified in the file on the SMB share?
 
 **Answer: M3g4c0rp123**
 
-![](/media-original/tier2/image3.png)
+![](/kipchumba-portfolio/media-original/tier2/image3.png)
 
 **Task 4**
 
@@ -38,7 +38,7 @@ an authenticated connection to a Microsoft SQL Server?
 
 **Answer: mssqlclient.py**
 
-![](/media-original/tier2/image4.png)
+![](/kipchumba-portfolio/media-original/tier2/image4.png)
 
 **Task 5**
 

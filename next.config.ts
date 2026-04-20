@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: '/kipchumba-portfolio', // <-- ADDED THIS LINE
   output: 'export', // Tells Next.js to build static HTML for GitHub Pages
   images: {
     unoptimized: true, // Required for static export

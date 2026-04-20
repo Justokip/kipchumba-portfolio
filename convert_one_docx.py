@@ -103,7 +103,7 @@ def convert_single_docx(docx_path, output_md_name, media_folder_name):
         # Replace absolute paths with /media-original/folder/imageN.png
         md_content = re.sub(
             r'!\[\]\(/home/crypt0/Desktop/kipchumba-portfolio/public/media-original/[^/]+/(?:media/)?image(\d+)\.png\)',
-            rf'![](/media-original/{media_folder_name}/image\1.png)',
+            rf'![](/kipchumba-portfolio/media-original/{media_folder_name}/image\1.png)',
             md_content
         )
         
