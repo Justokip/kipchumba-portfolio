@@ -1,6 +1,5 @@
 ---
-title: "HTB Walkthrough: Starting Point Tier 0"
-date: "2024-05-22"
+title: "HTB Walkthrough: sdsds"
 description: "Mastering the basics of service enumeration and initial access."
 tags: ["HTB", "Recon", "Telnet"]
 platform: "HackTheBox"
