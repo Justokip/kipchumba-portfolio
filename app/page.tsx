@@ -26,12 +26,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-20 relative">
+    // Added min-h-[85vh] and flex to keep everything perfectly centered vertically
+    <div className="max-w-6xl mx-auto px-6 flex items-center min-h-[85vh] relative">
       
-      {/* Optional: Subtle background grid for that cyber feel */}
+      {/* Subtle background grid for that cyber feel */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none -z-10 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
 
-      <section className="flex flex-col md:flex-row items-center justify-between gap-12 mt-12">
+      <section className="flex w-full flex-col md:flex-row items-center justify-between gap-12">
         
         {/* Left Column: The Intro */}
         <motion.div 
@@ -46,7 +47,7 @@ export default function Home() {
             <span>{typedText}<span className="animate-pulse">_</span></span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-text-primary">
             Securing networks. <br />
             <span className="text-neon-blue drop-shadow-[0_0_15px_rgba(0,153,255,0.3)]">
               Building infrastructure.
@@ -62,8 +63,8 @@ export default function Home() {
               View My Work <ArrowRight size={18} />
             </Link>
             
-            {/* Fixed absolute path for GitHub Pages CV download */}
-            <a href="/kipchumba-portfolio/kipchumba-cv.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-text-secondary hover:border-neon-green text-text-primary font-bold rounded hover:shadow-[0_0_15px_rgba(0,255,153,0.2)] transition-all">
+            {/* FIXED PATH: Clean root path for custom domain */}
+            <a href="/kipchumba-cv.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-text-secondary hover:border-neon-green text-text-primary font-bold rounded hover:shadow-[0_0_15px_rgba(0,255,153,0.2)] transition-all">
               Download CV
             </a>
           </div>
@@ -82,7 +83,7 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* Right Column: The Interactive Grid */}
+        {/* Right Column: The Interactive Grid (NOW WITH ACTIVE LINKS) */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -93,20 +94,23 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-neon-green/5 rounded-full blur-3xl pointer-events-none"></div>
 
           <div className="relative z-10 grid grid-cols-2 gap-4">
-             <div className="p-6 bg-surface/80 backdrop-blur border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-green hover:shadow-[0_0_20px_rgba(0,255,153,0.2)] hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+             {/* Pen Testing -> Links to Projects page */}
+             <Link href="/projects" className="p-6 bg-surface/80 backdrop-blur border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-green hover:shadow-[0_0_20px_rgba(0,255,153,0.2)] hover:-translate-y-1 transition-all duration-300 group">
                 <Shield size={40} className="text-neon-green group-hover:drop-shadow-[0_0_8px_rgba(0,255,153,0.8)] transition-all" />
                 <span className="font-mono text-sm text-text-secondary group-hover:text-text-primary transition-colors">Pen Testing</span>
-             </div>
+             </Link>
              
-             <div className="p-6 bg-surface/80 backdrop-blur border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-blue hover:shadow-[0_0_20px_rgba(0,153,255,0.2)] hover:-translate-y-1 transition-all duration-300 mt-8 cursor-pointer group">
+             {/* Infrastructure -> Links to Projects page (Can be updated to a specific blog post later) */}
+             <Link href="/projects" className="p-6 bg-surface/80 backdrop-blur border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-blue hover:shadow-[0_0_20px_rgba(0,153,255,0.2)] hover:-translate-y-1 transition-all duration-300 mt-8 group">
                 <Server size={40} className="text-neon-blue group-hover:drop-shadow-[0_0_8px_rgba(0,153,255,0.8)] transition-all" />
                 <span className="font-mono text-sm text-text-secondary group-hover:text-text-primary transition-colors">Infrastructure</span>
-             </div>
+             </Link>
              
-             <div className="p-6 bg-surface/80 backdrop-blur border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-green hover:shadow-[0_0_20px_rgba(0,255,153,0.2)] hover:-translate-y-1 transition-all duration-300 col-span-2 cursor-pointer group">
+             {/* System Admin -> Links to About page (Experience section) */}
+             <Link href="/about" className="p-6 bg-surface/80 backdrop-blur border border-surface rounded-xl flex flex-col items-center gap-3 hover:border-neon-green hover:shadow-[0_0_20px_rgba(0,255,153,0.2)] hover:-translate-y-1 transition-all duration-300 col-span-2 group">
                 <Lock size={40} className="text-neon-green group-hover:drop-shadow-[0_0_8px_rgba(0,255,153,0.8)] transition-all" />
                 <span className="font-mono text-sm text-text-secondary group-hover:text-text-primary transition-colors">System Admin</span>
-             </div>
+             </Link>
           </div>
         </motion.div>
       </section>
