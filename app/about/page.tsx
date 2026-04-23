@@ -81,8 +81,24 @@ export default function About() {
   ];
 
   const awards = [
-    { title: "University CTF: Binary Badlands", event: "Hack The Box", date: "View Certificate" },
-    { title: "Advent of Cyber", event: "TryHackMe", date: "View Certificate" }
+    { 
+      title: "Kenya Cybergame", 
+      event: "National Cybersecurity Competition", 
+      date: "Ongoing",
+      description: "Currently participating in the Kenya Cybergame, actively engaging in national-level cybersecurity challenges encompassing penetration testing, defense operations, and incident response."
+    },
+    { 
+      title: "Advent of Cyber 2024", 
+      event: "TryHackMe", 
+      date: "Jan 2025",
+      description: "Successfully completed TryHackMe's Advent of Cyber 2024, a 25-day challenge focused on real-world cybersecurity scenarios, including threat simulation, log analysis, vulnerability exploitation, malware analysis, and cloud security."
+    },
+    { 
+      title: "University CTF 2024: Binary Badlands", 
+      event: "Hack The Box", 
+      date: "Dec 2024",
+      description: "Successfully completed the University CTF 2024: Binary Badlands, an advanced cybersecurity competition organized by Hack The Box. Demonstrated expertise in binary exploitation, reverse engineering, coding, forensics, and vulnerability analysis."
+    }
   ];
 
   return (
@@ -268,14 +284,19 @@ export default function About() {
           </div>
           <div className="space-y-4">
             {awards.map((award, index) => (
-              <div key={index} className="p-4 border-l-2 border-surface hover:border-neon-green transition-colors bg-surface/30">
-                <h3 className="font-bold text-text-primary mb-1">{award.title}</h3>
-                <div className="flex justify-between text-sm items-center">
-                  <span className="text-text-secondary">{award.event}</span>
-                  <a href="#" className="font-mono text-neon-blue hover:underline text-xs bg-surface px-2 py-1 rounded border border-surface">
+              <div key={index} className="p-5 border-l-2 border-surface hover:border-neon-green transition-colors bg-surface/30 group">
+                <h3 className="font-bold text-text-primary mb-2 group-hover:text-neon-green transition-colors">{award.title}</h3>
+                
+                <div className="flex justify-between text-sm items-center mb-3">
+                  <span className="font-mono text-neon-blue">{award.event}</span>
+                  <span className="font-mono text-text-secondary text-xs bg-surface px-2 py-1 rounded border border-surface">
                     {award.date}
-                  </a>
+                  </span>
                 </div>
+                
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  {award.description}
+                </p>
               </div>
             ))}
           </div>

@@ -11,7 +11,7 @@ platform: "TryHackMe"
 
 **Key Terms:**
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image7.png)
+![](/media-original/wifi-hacking/image7.png)
 
 **Questions:**
 
@@ -78,17 +78,17 @@ data, and attempting to crack WEP and WPA/WPA2-PSK encryption keys.
 
 > **Answer: -w**
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image5.png)
+![](/media-original/wifi-hacking/image5.png)
 
 **1.3 AIRCRACK-NG**
 
 **CRACKING:**
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image6.png)
+![](/media-original/wifi-hacking/image6.png)
 
 **---HELP**
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image2.png)
+![](/media-original/wifi-hacking/image2.png)
 
 **Questions:**
 
@@ -118,15 +118,15 @@ data, and attempting to crack WEP and WPA/WPA2-PSK encryption keys.
 
 After downloading the files, unzipped the file.
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image4.png)
+![](/media-original/wifi-hacking/image4.png)
 
 Creating a hashcat file
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image1.png)
+![](/media-original/wifi-hacking/image1.png)
 
 **Cracking the password:**
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image3.png)
+![](/media-original/wifi-hacking/image3.png)
 
 **1.4 CONCLUSION**
 
@@ -140,4 +140,4 @@ almighty rockyou wordlist.
 
 **Completion screenshot:**
 
-![](/kipchumba-portfolio/media-original/wifi-hacking/image8.png)
+![](/media-original/wifi-hacking/image8.png)

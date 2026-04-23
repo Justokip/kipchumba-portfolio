@@ -30,7 +30,7 @@ applications and middleware interact with the DBMS to handle data
 requests efficiently. This knowledge is foundational for understanding
 SQL injection and secure database interactions.
 
-**Architecture:**![](/kipchumba-portfolio/media-original/sql-injection/image10.png)
+**Architecture:**![](/media-original/sql-injection/image10.png)
 
 **1.3 TYPES OF DATABASES**
 
@@ -46,7 +46,7 @@ suited for unstructured data. Understanding these types helps in
 choosing the right database for specific needs and provides insight into
 SQL and NoSQL injection techniques**.**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image14.png)
+![](/media-original/sql-injection/image14.png)
 
 **1.4 INTRO TO MYSQL**
 
@@ -60,7 +60,7 @@ to define tables with specific data types and constraints, such as
 integrity and uniqueness. These fundamentals help in both database
 management and identifying security vulnerabilities like SQL injections.
 
-![](/kipchumba-portfolio/media-original/sql-injection/image20.png)
+![](/media-original/sql-injection/image20.png)
 
 Question:
 
@@ -70,7 +70,7 @@ Question:
 
 > **Answer: employees**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image5.png)
+![](/media-original/sql-injection/image5.png)
 
 **1.5 SQL STATEMENTS**
 
@@ -92,7 +92,7 @@ Question:
 
 > **Answer: d005**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image3.png)
+![](/media-original/sql-injection/image3.png)
 
 **1.6 QUERY RESULTS**
 
@@ -114,7 +114,7 @@ Question:
 
 > **Answer: Mitchem**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image6.png)
+![](/media-original/sql-injection/image6.png)
 
 **1.7 SQL OPERATORS**
 
@@ -131,7 +131,7 @@ operators, ensuring the correct order of operations in complex queries.
 
 **Operator precedence:**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image9.png)
+![](/media-original/sql-injection/image9.png)
 
 **Question:**
 
@@ -141,7 +141,7 @@ operators, ensuring the correct order of operations in complex queries.
 
 > **Answer: 654**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image1.png)
+![](/media-original/sql-injection/image1.png)
 
 **1.8 INTRO TO SQL INJECTIONS**
 
@@ -156,7 +156,7 @@ such as data theft or deletion. The types of SQL injection include
 SQL injection,*** with a focus on Union-based injection in this module.
 Proper sanitization of user input is essential to prevent these attacks.
 
-![](/kipchumba-portfolio/media-original/sql-injection/image19.png)
+![](/media-original/sql-injection/image19.png)
 
 **1.9 SUBVERTING QUERY LOGIC**
 
@@ -171,7 +171,7 @@ username is unknown, injecting ***OR \'1\'=\'1*** into the password
 field can also result in successful authentication. This highlights the
 importance of sanitising user input to prevent such vulnerabilities.
 
-![](/kipchumba-portfolio/media-original/sql-injection/image11.png)
+![](/media-original/sql-injection/image11.png)
 
 Question:
 
@@ -180,7 +180,7 @@ Question:
 
 > **Answer: 202a1d1a8b195d5e9a57e434cc16000c**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image17.png)
+![](/media-original/sql-injection/image17.png)
 
 **1.10 USING COMMENTS**
 
@@ -200,7 +200,7 @@ Question:
 
 > **Answer: cdad9ecdf6f14b45ff5c4de32909caec**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image15.png)
+![](/media-original/sql-injection/image15.png)
 
 **1.11 UNION CLAUSE**
 
@@ -226,11 +226,11 @@ database.
 
 Command used:
 
-![](/kipchumba-portfolio/media-original/sql-injection/image2.png)
+![](/media-original/sql-injection/image2.png)
 
 Number returned:
 
-![](/kipchumba-portfolio/media-original/sql-injection/image12.png)
+![](/media-original/sql-injection/image12.png)
 
 **1.12 UNION INJECTION**
 
@@ -251,7 +251,7 @@ working and data from the database can be extracted.
 
 > **Answer**: [root@localhost]
 
-![](/kipchumba-portfolio/media-original/sql-injection/image13.png)
+![](/media-original/sql-injection/image13.png)
 
 **[1.13 DATABASE ENUMERATION]**
 
@@ -267,7 +267,7 @@ usernames and passwords. By constructing UNION-based SQL queries, I was
 able to extract sensitive information, demonstrating how to enumerate
 databases and gather data from vulnerable web applications.
 
-![](/kipchumba-portfolio/media-original/sql-injection/image18.png)
+![](/media-original/sql-injection/image18.png)
 
 Question:
 
@@ -279,7 +279,7 @@ Question:
 Command used ***cn\' UNION select 1,username,password,4 from
 ilfreight.users\-- -***
 
-![](/kipchumba-portfolio/media-original/sql-injection/image7.png)
+![](/media-original/sql-injection/image7.png)
 
 **1.14 READING FILES**
 
@@ -304,7 +304,7 @@ Question:
 Used the command: ***cn\' UNION SELECT 1,
 LOAD_FILE(\"/var/www/html/config.php\"), 3, 4 \-- -***
 
-![](/kipchumba-portfolio/media-original/sql-injection/image4.png)
+![](/media-original/sql-injection/image4.png)
 
 **1.16 MITIGATING SQL INJECTION**
 
@@ -346,33 +346,33 @@ vulnerabilities.
 To bypass the login, I executed the following SQL command: ***admin\' or
 1=1\-- jjjkajsak***
 
-![](/kipchumba-portfolio/media-original/sql-injection/image23.png)
+![](/media-original/sql-injection/image23.png)
 
 successfully bypassing the login:
 
-![](/kipchumba-portfolio/media-original/sql-injection/image26.png)
+![](/media-original/sql-injection/image26.png)
 
 Using the union method, I established that there are 5 columns and it
 also revealed that columns 2,3,4 & 5 are the only ones displayed on the
 screen.
 
-![](/kipchumba-portfolio/media-original/sql-injection/image25.png)
+![](/media-original/sql-injection/image25.png)
 
 Using the command ***\' UNION SELECT 1, super_priv, 3, 4, 5 FROM
 mysql.user\-- -*** confirms that the user has superuser privileges
 
-![](/kipchumba-portfolio/media-original/sql-injection/image22.png)
+![](/media-original/sql-injection/image22.png)
 
-![](/kipchumba-portfolio/media-original/sql-injection/image21.png)
+![](/media-original/sql-injection/image21.png)
 
 navigated to the root directory with the payload:
 
-![](/kipchumba-portfolio/media-original/sql-injection/image8.png)
+![](/media-original/sql-injection/image8.png)
 
 To load the file to read its contents using the payload, command used:
 ***\' UNION SELECT 1,LOAD_FILE(\"/flag_cae1dadcd174.txt\"),3,4,5\-- -***
 
-![](/kipchumba-portfolio/media-original/sql-injection/image24.png)
+![](/media-original/sql-injection/image24.png)
 
 **CONCLUSION**
 
@@ -393,7 +393,7 @@ applications against SQL injection.
 
 **Completion Screenshot:**
 
-![](/kipchumba-portfolio/media-original/sql-injection/image16.png)
+![](/media-original/sql-injection/image16.png)
 
 **Link to my completed module:**
 

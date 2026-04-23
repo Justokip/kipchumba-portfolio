@@ -16,17 +16,17 @@ platform: "Independent Assessment"
 
 1.  Dns and basic information Gathering
 
-![](/kipchumba-portfolio/media-original/walkthrough/image4.png)
+![](/media-original/walkthrough/image4.png)
 
 2.  Port Scanning
 
-> ![](/kipchumba-portfolio/media-original/walkthrough/image2.png)
+> ![](/media-original/walkthrough/image2.png)
 >
 > There are no database ports exposed which is pretty good
 
 I used **nikto** to scan for known vulnerabilities:
 
-![](/kipchumba-portfolio/media-original/walkthrough/image5.png)
+![](/media-original/walkthrough/image5.png)
 
 **Findings**: The anti-clickjacking X-Frame-Options header is not
 present hence could hijack user actions
@@ -39,7 +39,7 @@ present hence could hijack user actions
 
 In this phase i am going to use the gobuster command
 
-![](/kipchumba-portfolio/media-original/walkthrough/image7.png)
+![](/media-original/walkthrough/image7.png)
 
 Server kept returning HTTP 200 for non-existing directories
 
@@ -50,7 +50,7 @@ Endpoints:
 
 **SSL CONFIGURATIONS:**
 
-![](/kipchumba-portfolio/media-original/walkthrough/image3.png)
+![](/media-original/walkthrough/image3.png)
 
 The server enforces strong TLS
 
@@ -58,11 +58,11 @@ The server enforces strong TLS
 
 Filling Dummy data
 
-![](/kipchumba-portfolio/media-original/walkthrough/image6.png)
+![](/media-original/walkthrough/image6.png)
 
 **captured HTTP request in Burp**
 
-![](/kipchumba-portfolio/media-original/walkthrough/image1.png)
+![](/media-original/walkthrough/image1.png)
 
 \*\*\*swivel-checkout.kentapay.com
 

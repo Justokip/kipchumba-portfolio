@@ -20,7 +20,7 @@ get optimized results.
 
 > **[Answer: cyber-host]**
 
-![](/kipchumba-portfolio/media-original/splunk/image3.png)
+![](/media-original/splunk/image3.png)
 
 **[1.3 SEARCH AND REPORTING APP OVERVIEW]**
 
@@ -52,19 +52,19 @@ enhancing data exploration and search efficiency.
 **[Answer: index=windowslogs \| chart count(EventCode) by
 Image]**
 
-![](/kipchumba-portfolio/media-original/splunk/image2.png)
+![](/media-original/splunk/image2.png)
 
 **[Question 2:]**
 
 **[Answer: 172.90.12.11]**
 
-![](/kipchumba-portfolio/media-original/splunk/image1.png)
+![](/media-original/splunk/image1.png)
 
 **[Question 3:]**
 
 **[Answer: 134]**
 
-![](/kipchumba-portfolio/media-original/splunk/image6.png)
+![](/media-original/splunk/image6.png)
 
 **[1.4 SPLUNK PROCESSING LANGUAGE OVERVIEW]**
 
@@ -81,7 +81,7 @@ streamline analyzing ingested log data efficiently.
 
 **[Search field operators:]**
 
-![](/kipchumba-portfolio/media-original/splunk/image20.png)
+![](/media-original/splunk/image20.png)
 
 **[Questions:]**
 
@@ -107,31 +107,31 @@ streamline analyzing ingested log data efficiently.
 
 **[Answer: 4]**
 
-![](/kipchumba-portfolio/media-original/splunk/image4.png)
+![](/media-original/splunk/image4.png)
 
 **[Question 2:]**
 
 **[Answer: 4]**
 
-![](/kipchumba-portfolio/media-original/splunk/image10.png)
+![](/media-original/splunk/image10.png)
 
 **[Question 3:]**
 
 **[Answer:]**172.90.12.11
 
-![](/kipchumba-portfolio/media-original/splunk/image5.png)
+![](/media-original/splunk/image5.png)
 
 **[Question 4:]**
 
 **[Answer: 0]**
 
-![](/kipchumba-portfolio/media-original/splunk/image14.png)
+![](/media-original/splunk/image14.png)
 
 **[Question 5:]**
 
 **[Answer: 12, 256]**
 
-![](/kipchumba-portfolio/media-original/splunk/image7.png)
+![](/media-original/splunk/image7.png)
 
 **[1.5 FILTERING THE RESULTS IN SPL]**
 
@@ -161,13 +161,13 @@ renaming User to Employees.
 
 **[Answer: 4103]**
 
-![](/kipchumba-portfolio/media-original/splunk/image9.png)
+![](/media-original/splunk/image9.png)
 
 **[Question 2:]**
 
 **[Answer: Salena.Adam]**
 
-![](/kipchumba-portfolio/media-original/splunk/image11.png)
+![](/media-original/splunk/image11.png)
 
 **[1.6 SPL - STRUCTURING THE SEARCH RESULTS]**
 
@@ -191,19 +191,19 @@ very useful during logs investigation.
 
 **[Answer: James.browne]**
 
-![](/kipchumba-portfolio/media-original/splunk/image16.png)
+![](/media-original/splunk/image16.png)
 
 **[Question 2:]**
 
 **[Answer: 4103]**
 
-![](/kipchumba-portfolio/media-original/splunk/image17.png)
+![](/media-original/splunk/image17.png)
 
 **[Question 3:]**
 
 **[Answer: Microsoft-Windows-Directory-Services-SAM]**
 
-![](/kipchumba-portfolio/media-original/splunk/image12.png)
+![](/media-original/splunk/image12.png)
 
 **[1.7 TRANSFORMATIONAL COMMANDS IN SPL]**
 
@@ -216,7 +216,7 @@ commands are called ***transforming searches.***
 
 **[Stats Commands:]**
 
-![](/kipchumba-portfolio/media-original/splunk/image18.png)
+![](/media-original/splunk/image18.png)
 
 **[Questions:]**
 
@@ -233,19 +233,19 @@ commands are called ***transforming searches.***
 
 **[Answer: 196]**
 
-![](/kipchumba-portfolio/media-original/splunk/image13.png)
+![](/media-original/splunk/image13.png)
 
 **[Question 2:]**
 
 **[Answer: James]**
 
-![](/kipchumba-portfolio/media-original/splunk/image15.png)
+![](/media-original/splunk/image15.png)
 
 **[Question 3:]**
 
 **[Answer: 70]**
 
-![](/kipchumba-portfolio/media-original/splunk/image8.png)
+![](/media-original/splunk/image8.png)
 
 **[1.8 CONCLUSIONS]**
 
@@ -257,4 +257,4 @@ for visualization and statistical insights. These skills enable me to
 analyze large datasets, identify anomalies, and enhance network security
 effectively.
 
-![](/kipchumba-portfolio/media-original/splunk/image19.png)
+![](/media-original/splunk/image19.png)

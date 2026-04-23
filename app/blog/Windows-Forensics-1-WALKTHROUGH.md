@@ -46,7 +46,7 @@ user activity and system configurations.
 
 **Definitions for each of these root keys:**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image9.png)
+![](/media-original/windows-forensics/image9.png)
 
 **1.3 ACCESSING REGISTRY HIVES OFFLINE**
 
@@ -63,7 +63,7 @@ about recently executed programs. Registry transaction logs (.LOG files)
 track changes to hives, while registry backups in the RegBack directory
 can help recover or analyze modified or deleted keys.
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image12.png)
+![](/media-original/windows-forensics/image12.png)
 
 **Questions:**
 
@@ -102,7 +102,7 @@ logs, requiring tools like ***Registry Explorer*** for preprocessing.
 
 **RegRipper:**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image11.png)
+![](/media-original/windows-forensics/image11.png)
 
 **1.6 SYSTEM INFORMATION AND SYSTEM ACCOUNTS**
 
@@ -260,11 +260,11 @@ reconstruct USB activity on a system.
 
 **Device identification:**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image13.png)
+![](/media-original/windows-forensics/image13.png)
 
 **Friendly name:**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image2.png)
+![](/media-original/windows-forensics/image2.png)
 
 **1.10 HANDS-ON CHALLENGE**
 
@@ -310,45 +310,45 @@ this process.
 I did a RDP into the machine. Located the EZTools folder then opened the
 RegistryExplorer and loaded the hives needed.
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image3.png)
+![](/media-original/windows-forensics/image3.png)
 
 **Question 1: Hint:**Accounts with RIDs starting with 10xx are user
 created accounts
 
 **Answer: 3**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image1.png)
+![](/media-original/windows-forensics/image1.png)
 
 **Question 2: Hint:** Check the account that does not have a last logged
 in time
 
 **Answer: thm-user2**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image8.png)
+![](/media-original/windows-forensics/image8.png)
 
 **Question 3: Hint:** Check the Password Hint column
 
 **Answer: Count**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image6.png)
+![](/media-original/windows-forensics/image6.png)
 
 **Question 4:** RecentDoc
 
 **Answer: 2021-11-24 18:18:48**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image7.png)
+![](/media-original/windows-forensics/image7.png)
 
 **Question 5:** Made use of the search
 
 **Answer: Z:\\setups\\python-3.8.2.exe**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image4.png)
+![](/media-original/windows-forensics/image4.png)
 
 **Question 6:**
 
 **Answer: 2021-11-24 18:40:06**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image5.png)
+![](/media-original/windows-forensics/image5.png)
 
 **1.11 CONCLUSION**
 
@@ -363,4 +363,4 @@ which is the windows forensic 2!
 
 **Completion Screenshot:**
 
-![](/kipchumba-portfolio/media-original/windows-forensics/image10.png)
+![](/media-original/windows-forensics/image10.png)
