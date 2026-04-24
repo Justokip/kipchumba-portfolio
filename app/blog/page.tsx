@@ -17,7 +17,7 @@ interface Post {
 
 export default function Blog() {
   // Make sure this path matches exactly where your .md files live
-  const blogDir = "src/app/blog"; 
+  const blogDir = "app/blog"; 
   
   const absolutePath = path.join(process.cwd(), blogDir);
 
