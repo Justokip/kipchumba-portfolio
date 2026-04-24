@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Link from 'next/link';
-import { Terminal, Calendar } from "lucide-react";
+import { Terminal } from "lucide-react";
+import BlogClient from './BlogClient'; // Importing our new UI component
 
 interface Post {
   slug: string;
@@ -16,74 +16,35 @@ interface Post {
 }
 
 export default function Blog() {
-  const blogDir = "app/blog";
+  // Make sure this path matches exactly where your .md files live
+  const blogDir = "src/app/blog"; 
   
-  if (!fs.existsSync(path.join(process.cwd(), blogDir))) {
+  const absolutePath = path.join(process.cwd(), blogDir);
+
+  if (!fs.existsSync(absolutePath)) {
     return (
       <div className="max-w-6xl mx-auto px-6 py-20 mt-12 text-center text-text-secondary font-mono">
         <Terminal className="mx-auto mb-4 opacity-50" size={48} />
-        <p>No writeups found. Awaiting data injection into /app/blog...</p>
+        <p>No writeups found. Awaiting data injection into {blogDir}...</p>
       </div>
     );
   }
 
-  const files = fs.readdirSync(path.join(process.cwd(), blogDir));
+  const files = fs.readdirSync(absolutePath);
 
   const posts: Post[] = files
     .filter(filename => filename.endsWith('.md'))
     .map(filename => {
-      const fileContent = fs.readFileSync(path.join(process.cwd(), blogDir, filename), 'utf-8');
+      const fileContent = fs.readFileSync(path.join(absolutePath, filename), 'utf-8');
       const { data } = matter(fileContent);
       return {
         slug: filename.replace('.md', ''),
         meta: data as Post['meta']
       };
     })
+    // Sort from newest to oldest
     .sort((a, b) => new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime());
 
-  return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-20 mt-12">
-      <div className="mb-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 flex items-center gap-3">
-          <Terminal className="text-neon-green" size={32} />
-          <span>./Writeups_&_Logs</span>
-        </h1>
-        <p className="text-text-secondary font-mono text-sm">
-          Detailed walkthroughs for HackTheBox, TryHackMe, and custom security research.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        {posts.map((post) => (
-          <Link href={`/blog/${post.slug}`} key={post.slug} className="block group">
-            <div className="p-4 sm:p-6 bg-surface border border-surface rounded-xl hover:border-neon-green transition-all">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2 font-mono text-xs">
-                    <span className="text-neon-blue">[{post.meta.platform || "Research"}]</span>
-                    <span className="text-text-secondary flex items-center gap-1">
-                      <Calendar size={12} /> {post.meta.date}
-                    </span>
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-bold text-text-primary group-hover:text-neon-green transition-colors mb-2 line-clamp-2">
-                    {post.meta.title}
-                  </h2>
-                  <p className="text-text-secondary text-sm line-clamp-2 mb-3 sm:mb-4">
-                    {post.meta.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {post.meta.tags?.map(tag => (
-                      <span key={tag} className="text-xs font-mono text-text-secondary bg-background px-2 py-1 rounded border border-surface">
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
+  // Pass the raw data into our interactive client component
+  return <BlogClient posts={posts} />;
 }
