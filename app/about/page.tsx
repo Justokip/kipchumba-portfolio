@@ -20,11 +20,18 @@ export default function About() {
     {
       category: "Web & Cloud",
       icon: <ShieldCheck className="text-text-primary" size={20} />,
-      items: ["OWASP Top 10", "SQL Injection", "XSS", "Azure Fundamentals", "Python Automation", "Bash Scripting"]
+      items: ["OWASP Top 10", "SQL Injection", "XSS", "Azure Fundamentals", "IoT Architecture (MQTT)", "Python Automation", "Bash Scripting"]
     }
   ];
 
   const experience = [
+    {
+      role: "Enterprise Service Support (Technology Cluster)",
+      company: "Safaricom PLC",
+      duration: "May 2026 - Present", // FIXED: Changed from 'date' to 'duration'
+      description: "Providing Level 2 & Level 3 technical support, monitoring fiber links, and managing incidents. Responsible for troubleshooting BGP routing and MPLS network outages. Managed cloud infrastructure by diagnosing email delivery failures (550 errors), auditing DNS records (SPF, DKIM, PTR), and resolving complex Outlook and OWA synchronization issues.",
+      tech: ["Level 2 & Level 3 Support", "BGP", "MPLS", "DNS", "Email Routing"] // FIXED: Changed from 'tags' to 'tech'
+    },
     {
       role: "Front Office & Operations Assistant",
       company: "Embassa Guest House & Hotel",
@@ -76,6 +83,8 @@ export default function About() {
     { name: "Ethical Hacking", issuer: "Cisco", status: "Certified", color: "text-neon-green" },
     { name: "Security Analyst", issuer: "Cybershujaa Program", status: "Certified", color: "text-text-primary" },
     { name: "Enterprise Security in Practice", issuer: "IBM", status: "Certified", color: "text-neon-blue" },
+    { name: "Azure Administration Essentials", issuer: "Microsoft", status: "Completed", color: "text-neon-blue" }, // ADDED
+    { name: "Project Management Fundamentals", issuer: "Fundamentals", status: "Completed", color: "text-text-primary" }, // ADDED
     { name: "Professional Foundations", issuer: "ALX", status: "Completed", color: "text-neon-green" },
     { name: "Networking and Administration", issuer: "Fundamentals", status: "Completed", color: "text-text-primary" }
   ];
@@ -84,8 +93,8 @@ export default function About() {
     { 
       title: "Kenya Cybergame", 
       event: "National Cybersecurity Competition", 
-      date: "Ongoing",
-      description: "Currently participating in the Kenya Cybergame, actively engaging in national-level cybersecurity challenges encompassing penetration testing, defense operations, and incident response."
+      date: "May 2026",
+      description: "Participated as a registered player in the CyberGame Kenya 2026 Capture The Flag (CTF) competition. Achieved 52nd place overall by successfully solving 25 out of 83 challenges and securing 4610 points. The competition covered domains including malware analysis, forensics, cryptography, OSINT, offensive security, and processes and security governance."
     },
     { 
       title: "Advent of Cyber 2024", 
