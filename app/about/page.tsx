@@ -141,7 +141,7 @@ export default function About() {
               My journey into tech started with a deep curiosity about how networks communicate and how systems are built. That curiosity naturally evolved into figuring out how those same systems can be broken, and more importantly, <span className="text-neon-blue font-medium">how to secure them</span>.
             </p>
             <p>
-              Unlike purely offensive security professionals, my strong background in IT infrastructure gives me a unique advantage. I don't just find vulnerabilities; I understand the underlying architecture—whether it's an Active Directory forest, a Linux server, or a cloud deployment—allowing me to provide practical, effective remediation strategies.
+              Unlike purely offensive security professionals, my strong background in IT infrastructure gives me a unique advantage. I don't just find vulnerabilities; I understand the underlying architecture, whether it's an Active Directory forest, a Linux server, or a cloud deployment allowing me to provide practical, effective remediation strategies.
             </p>
             <p>
               When I am not auditing systems or managing infrastructure, you can find me tackling boxes on Hack The Box, participating in TryHackMe paths, or optimizing my personal homelab.
